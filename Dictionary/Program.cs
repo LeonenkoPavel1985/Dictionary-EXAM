@@ -27,28 +27,52 @@ namespace Dictionary
                 switch (choice)
                 {
                     case "1":
+                        Console.Clear();
+                        Console.WriteLine("Создание словаря.");
                         _dictionaryService.CreateDictionary();
+                        Console.Clear();
                         break;
                     case "2":
+                        Console.Clear();
+                        Console.WriteLine("Добавление слова и его перевода в уже существующий словарь.");
                         _dictionaryService.WordProcessing();
+                        Console.Clear();
                         break;
                     case "3":
+                        Console.Clear();
+                        Console.WriteLine("Замена слова.");
                         _dictionaryService.WordProcessing(isReplace: true);
+                        Console.Clear();
                         break;
                     case "4":
+                        Console.Clear();
+                        Console.WriteLine("Замена перевода в слове.");
                         _dictionaryService.WordProcessing(isReplaceTranslation: true);
+                        Console.Clear();
                         break;
                     case "5":
+                        Console.Clear();
+                        Console.WriteLine("Удаление слова и его переводов из словаря.");
                         _dictionaryService.WordProcessing(isDelete: true);
+                        Console.Clear();
                         break;
                     case "6":
+                        Console.Clear();
+                        Console.WriteLine("Поиск перевода слова.");
                         _dictionaryService.WordProcessing(isSearch: true);
+                        Console.Clear();
                         break;
                     case "7":
+                        Console.Clear();
+                        Console.WriteLine("Экспорт словаря в отдельный файл.");
                         _dictionaryService.WordProcessing(isExportDict: true);
+                        Console.Clear();
                         break;
                     case "8":
+                        Console.Clear();
+                        Console.WriteLine("Выбор словаря.");
                         _dictionaryService.ChoiseDictionary();
+                        Console.Clear();
                         break;
                     case "9":
                         Environment.Exit(0);
